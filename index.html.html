@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Psicóloga Carolina Boeira Stefanello | Atendimento online | Psicoterapia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f2f2f2;
+      --text: #333;
+      --accent: #927c6b;
+      --button-bg: #927c6b;
+      --button-text: #fff;
+      --nav-height: 50px;
+      --content-max-width: 900px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-padding-top: calc(var(--nav-height) + 20px);
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header.main-header {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #927c6b;
+      padding: 0 2rem;
+    }
+
+    header.main-header > div {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      max-width: var(--content-max-width);
+      width: 100%;
+    }
+
+    header.main-header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header.main-header h1,
+    header.main-header h2.subtitle,
+    header.main-header p {
+      color: white;
+    }
+
+    header.main-header h1 {
+      font-family: 'Lora', serif;
+      font-size: 3rem;
+      margin-bottom: 0.25rem;
+    }
+
+    header.main-header h2.subtitle {
+      font-family: 'Lora', serif;
+      font-size: 1.5rem;
+      margin: 0.3rem 0 0.5rem 0;
+      font-weight: normal;
+    }
+
+    header.main-header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    nav.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--nav-height);
+      background-color: var(--bg);
+      border-top: 1px solid var(--accent);
+      border-bottom: 1px solid var(--accent);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 2rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+      gap: 2rem;
+    }
+
+    nav.navbar a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav.navbar a:hover {
+      color: #5a4332;
+    }
+
+    main {
+      max-width: var(--content-max-width);
+      margin: 0 auto;
+      padding: calc(var(--nav-height) + 2rem) 2rem 3rem 2rem;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    section h2 {
+      font-size: 1.7rem;
+      margin-bottom: 0.75rem;
+      color: var(--accent);
+      text-align: left;
+    }
+
+    section p {
+      margin-bottom: 1rem;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--button-bg);
+      color: var(--button-text);
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #7b6a5c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+
+    blockquote {
+      max-width: 600px;
+      margin-left: auto;
+      font-style: italic;
+      color: var(--accent);
+      text-align: justify;
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+      line-height: 1.4;
+      font-family: 'Lora', serif;
+    }
+
+    blockquote footer {
+      margin-top: 0.5rem;
+      text-align: right;
+      font-style: normal;
+      font-weight: normal;
+      color: var(--text);
+    }
+
+    blockquote cite {
+      font-style: normal;
+    }
+
+
+    @media (max-width: 768px) {
+      nav.navbar {
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 0 1rem;
+      }
+
+      header.main-header > div {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header.main-header img {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 1rem;
+      }
+
+      header.main-header h1 {
+        font-size: 2.2rem;
+      }
+
+      header.main-header h2.subtitle {
+        font-size: 1.2rem;
+      }
+
+      header.main-header p {
+        font-size: 1rem;
+      }
+
+      blockquote {
+        max-width: 100%;
+        margin-left: 0;
+        padding-left: 0.5rem;
+        border-left-width: 3px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div>
+      <img src="imagem.jpeg" alt="Foto de Carol" />
+      <div>
+        <h1>Carolina Boeira Stefanello</h1>
+        <h2 class="subtitle">Psicóloga clínica</h2>
+        <p>CRP 07/28856</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar" aria-label="Menu principal">
+    <a href="#sobre">Sobre</a>
+    <a href="#atendimento">Atendimento</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="sobre" style="display: flex; align-items: flex-start; gap: 1.5rem;">
+      <div style="flex: 1; text-align: justify;">
+        <h2>Sobre mim</h2>
+        <p>Olá! Eu sou a Carolina, psicóloga formada pela Universidade Regional do Noroeste do Estado do Rio Grande do Sul - Unijuí (2018). Lá, fui apresentada à Psicanálise e, desde então, minha escuta e minha ética são orientadas por ela. Sigo meu percurso teórico através de estudos individuais e em grupo, atualmente estou vinculada ao Lendo Freud Hoje.</p>
+        <p>Tenho mais de seis anos de experiência no atendimento a pessoas em situação de violência e/ou risco, bem como àquelas que vivenciaram experiências traumáticas ou enfrentam conflitos familiares. Esta vivência permite que eu consiga compreender o sujeito como um ser ativo e com possibilidade de escolha, mas também como efeito do ambiente e da realidade socioeconômica em que está inserido.</p>
+        <p>Embora tenha uma experiência específica, também atendo outras demandas, como ansiedade, depressão, estresse, problemas relacionados a autoestima e insegurança, dificuldades de relacionamento, luto, entre outros.</p>
+      </div>
+      <img src="imagem.jpeg" alt="Foto de Carol" style="width: 180px; height: auto; border-radius: 12px; object-fit: cover; align-self: center; display: none;" />
+    </section>
+
+    <section id="atendimento">
+      <blockquote>
+      “Em uma psicanálise, aliás, o que se aprende é a dar dignidade aos restos, afinal de contas, é deles que somos feitos.”
+      <footer>― Ana Suy, <cite>A Gente Mira no Amor e Acerta na Solidão</cite></footer>
+      </blockquote>
+      
+      <h2>Atendimento</h2>
+      <p>Eu atendo exclusivamente na modalidade on-line, com sessões semanais de aproximadamente 50 minutos, via Google Meet - com áudio e vídeo ativados. O valor da sessão é 120 reais, mas pode ser ajustado conforme as possibilidades de cada paciente, de modo a viabilizar o acesso.</p>
+      <p>A primeira sessão é um momento para nos conhecermos, para que eu possa compreender o que motivou a sua busca pelo atendimento e para conversarmos sobre como funciona o processo. Não há nenhuma exigência de continuidade: é um espaço inicial para que você compreenda se deseja seguir.</p>
+      <p>A análise é uma possibilidade de ressignificar, através da fala, experiências dolorosas e difíceis da nossa história, isto abre espaço para a mudança e permite a (re)escrita das nossas vidas. Com acolhimento, espero te acompanhar neste processo!</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Telefone: (54) 9.9932-6717</p>
+      <a class="button" href="https://wa.me/5554999326717?text=Ol%C3%A1%2C%20Carol!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Carolina Boeira Stefanello</p>
+  </footer>
+</body>
+</html>
